@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D76ADAF21F4D26CB007BC636 /* PaymentContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D76ADAF11F4D26CB007BC636 /* PaymentContext.m */; };
+		D76ADAF51F4D27E4007BC636 /* CashPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = D76ADAF41F4D27E4007BC636 /* CashPayment.m */; };
+		D76ADAF81F4D27FD007BC636 /* BankCardPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = D76ADAF71F4D27FD007BC636 /* BankCardPayment.m */; };
+		D76ADAFB1F4D2947007BC636 /* PaymentEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D76ADAFA1F4D2947007BC636 /* PaymentEntity.m */; };
+		D76ADB001F4D7978007BC636 /* Composit.m in Sources */ = {isa = PBXBuildFile; fileRef = D76ADAFF1F4D7978007BC636 /* Composit.m */; };
+		D76ADB031F4D79A4007BC636 /* Leaf.m in Sources */ = {isa = PBXBuildFile; fileRef = D76ADB021F4D79A4007BC636 /* Leaf.m */; };
+		D7AC6D581F4BFAE200EBD0AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AC6D571F4BFAE200EBD0AD /* main.m */; };
+		D7AC6D611F4BFB8800EBD0AD /* VoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AC6D601F4BFB8800EBD0AD /* VoteManager.m */; };
+		D7AC6D651F4BFC2000EBD0AD /* NormalVoteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AC6D641F4BFC2000EBD0AD /* NormalVoteHandler.m */; };
+		D7AC6D681F4BFC3700EBD0AD /* RepeatVoteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AC6D671F4BFC3700EBD0AD /* RepeatVoteHandler.m */; };
+		D7AC6D6B1F4BFC5B00EBD0AD /* SpiteVoteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AC6D6A1F4BFC5B00EBD0AD /* SpiteVoteHandler.m */; };
+		D7AC6D6E1F4BFC6E00EBD0AD /* BlackVoteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AC6D6D1F4BFC6E00EBD0AD /* BlackVoteHandler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7AC6D521F4BFAE200EBD0AD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D76ADAEF1F4D26B2007BC636 /* PaymentProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentProtocol.h; sourceTree = "<group>"; };
+		D76ADAF01F4D26CB007BC636 /* PaymentContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentContext.h; sourceTree = "<group>"; };
+		D76ADAF11F4D26CB007BC636 /* PaymentContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentContext.m; sourceTree = "<group>"; };
+		D76ADAF31F4D27E4007BC636 /* CashPayment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashPayment.h; sourceTree = "<group>"; };
+		D76ADAF41F4D27E4007BC636 /* CashPayment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashPayment.m; sourceTree = "<group>"; };
+		D76ADAF61F4D27FD007BC636 /* BankCardPayment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankCardPayment.h; sourceTree = "<group>"; };
+		D76ADAF71F4D27FD007BC636 /* BankCardPayment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankCardPayment.m; sourceTree = "<group>"; };
+		D76ADAF91F4D2947007BC636 /* PaymentEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentEntity.h; sourceTree = "<group>"; };
+		D76ADAFA1F4D2947007BC636 /* PaymentEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentEntity.m; sourceTree = "<group>"; };
+		D76ADAFD1F4D78FD007BC636 /* Component.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
+		D76ADAFE1F4D7978007BC636 /* Composit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Composit.h; sourceTree = "<group>"; };
+		D76ADAFF1F4D7978007BC636 /* Composit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Composit.m; sourceTree = "<group>"; };
+		D76ADB011F4D79A4007BC636 /* Leaf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Leaf.h; sourceTree = "<group>"; };
+		D76ADB021F4D79A4007BC636 /* Leaf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Leaf.m; sourceTree = "<group>"; };
+		D76ADB041F4D7F08007BC636 /* CompositPatterHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompositPatterHeader.h; sourceTree = "<group>"; };
+		D7AC6D541F4BFAE200EBD0AD /* DesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7AC6D571F4BFAE200EBD0AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7AC6D5F1F4BFB8800EBD0AD /* VoteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteManager.h; sourceTree = "<group>"; };
+		D7AC6D601F4BFB8800EBD0AD /* VoteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteManager.m; sourceTree = "<group>"; };
+		D7AC6D621F4BFBBA00EBD0AD /* VoteHandlerProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteHandlerProtocal.h; sourceTree = "<group>"; };
+		D7AC6D631F4BFC2000EBD0AD /* NormalVoteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalVoteHandler.h; sourceTree = "<group>"; };
+		D7AC6D641F4BFC2000EBD0AD /* NormalVoteHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalVoteHandler.m; sourceTree = "<group>"; };
+		D7AC6D661F4BFC3700EBD0AD /* RepeatVoteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatVoteHandler.h; sourceTree = "<group>"; };
+		D7AC6D671F4BFC3700EBD0AD /* RepeatVoteHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepeatVoteHandler.m; sourceTree = "<group>"; };
+		D7AC6D691F4BFC5B00EBD0AD /* SpiteVoteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiteVoteHandler.h; sourceTree = "<group>"; };
+		D7AC6D6A1F4BFC5B00EBD0AD /* SpiteVoteHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiteVoteHandler.m; sourceTree = "<group>"; };
+		D7AC6D6C1F4BFC6E00EBD0AD /* BlackVoteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackVoteHandler.h; sourceTree = "<group>"; };
+		D7AC6D6D1F4BFC6E00EBD0AD /* BlackVoteHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackVoteHandler.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7AC6D511F4BFAE200EBD0AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D76ADAEE1F4D1DFD007BC636 /* StrategyPattern */ = {
+			isa = PBXGroup;
+			children = (
+				D76ADAEF1F4D26B2007BC636 /* PaymentProtocol.h */,
+				D76ADAF01F4D26CB007BC636 /* PaymentContext.h */,
+				D76ADAF11F4D26CB007BC636 /* PaymentContext.m */,
+				D76ADAF31F4D27E4007BC636 /* CashPayment.h */,
+				D76ADAF41F4D27E4007BC636 /* CashPayment.m */,
+				D76ADAF61F4D27FD007BC636 /* BankCardPayment.h */,
+				D76ADAF71F4D27FD007BC636 /* BankCardPayment.m */,
+				D76ADAF91F4D2947007BC636 /* PaymentEntity.h */,
+				D76ADAFA1F4D2947007BC636 /* PaymentEntity.m */,
+			);
+			path = StrategyPattern;
+			sourceTree = "<group>";
+		};
+		D76ADAFC1F4D72F9007BC636 /* CompositPattern */ = {
+			isa = PBXGroup;
+			children = (
+				D76ADAFD1F4D78FD007BC636 /* Component.h */,
+				D76ADAFE1F4D7978007BC636 /* Composit.h */,
+				D76ADAFF1F4D7978007BC636 /* Composit.m */,
+				D76ADB011F4D79A4007BC636 /* Leaf.h */,
+				D76ADB021F4D79A4007BC636 /* Leaf.m */,
+				D76ADB041F4D7F08007BC636 /* CompositPatterHeader.h */,
+			);
+			path = CompositPattern;
+			sourceTree = "<group>";
+		};
+		D7AC6D4B1F4BFAE200EBD0AD = {
+			isa = PBXGroup;
+			children = (
+				D7AC6D561F4BFAE200EBD0AD /* DesignPattern */,
+				D7AC6D551F4BFAE200EBD0AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7AC6D551F4BFAE200EBD0AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7AC6D541F4BFAE200EBD0AD /* DesignPattern */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7AC6D561F4BFAE200EBD0AD /* DesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				D76ADAFC1F4D72F9007BC636 /* CompositPattern */,
+				D76ADAEE1F4D1DFD007BC636 /* StrategyPattern */,
+				D7AC6D5E1F4BFB0B00EBD0AD /* StatePattern */,
+				D7AC6D571F4BFAE200EBD0AD /* main.m */,
+			);
+			path = DesignPattern;
+			sourceTree = "<group>";
+		};
+		D7AC6D5E1F4BFB0B00EBD0AD /* StatePattern */ = {
+			isa = PBXGroup;
+			children = (
+				D7AC6D5F1F4BFB8800EBD0AD /* VoteManager.h */,
+				D7AC6D601F4BFB8800EBD0AD /* VoteManager.m */,
+				D7AC6D621F4BFBBA00EBD0AD /* VoteHandlerProtocal.h */,
+				D7AC6D631F4BFC2000EBD0AD /* NormalVoteHandler.h */,
+				D7AC6D641F4BFC2000EBD0AD /* NormalVoteHandler.m */,
+				D7AC6D661F4BFC3700EBD0AD /* RepeatVoteHandler.h */,
+				D7AC6D671F4BFC3700EBD0AD /* RepeatVoteHandler.m */,
+				D7AC6D691F4BFC5B00EBD0AD /* SpiteVoteHandler.h */,
+				D7AC6D6A1F4BFC5B00EBD0AD /* SpiteVoteHandler.m */,
+				D7AC6D6C1F4BFC6E00EBD0AD /* BlackVoteHandler.h */,
+				D7AC6D6D1F4BFC6E00EBD0AD /* BlackVoteHandler.m */,
+			);
+			path = StatePattern;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7AC6D531F4BFAE200EBD0AD /* DesignPattern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7AC6D5B1F4BFAE300EBD0AD /* Build configuration list for PBXNativeTarget "DesignPattern" */;
+			buildPhases = (
+				D7AC6D501F4BFAE200EBD0AD /* Sources */,
+				D7AC6D511F4BFAE200EBD0AD /* Frameworks */,
+				D7AC6D521F4BFAE200EBD0AD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesignPattern;
+			productName = DesignPattern;
+			productReference = D7AC6D541F4BFAE200EBD0AD /* DesignPattern */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7AC6D4C1F4BFAE200EBD0AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = LeePersen;
+				TargetAttributes = {
+					D7AC6D531F4BFAE200EBD0AD = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D7AC6D4F1F4BFAE200EBD0AD /* Build configuration list for PBXProject "DesignPattern" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D7AC6D4B1F4BFAE200EBD0AD;
+			productRefGroup = D7AC6D551F4BFAE200EBD0AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7AC6D531F4BFAE200EBD0AD /* DesignPattern */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7AC6D501F4BFAE200EBD0AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7AC6D581F4BFAE200EBD0AD /* main.m in Sources */,
+				D76ADAF81F4D27FD007BC636 /* BankCardPayment.m in Sources */,
+				D7AC6D651F4BFC2000EBD0AD /* NormalVoteHandler.m in Sources */,
+				D76ADAFB1F4D2947007BC636 /* PaymentEntity.m in Sources */,
+				D76ADB001F4D7978007BC636 /* Composit.m in Sources */,
+				D7AC6D6E1F4BFC6E00EBD0AD /* BlackVoteHandler.m in Sources */,
+				D7AC6D611F4BFB8800EBD0AD /* VoteManager.m in Sources */,
+				D7AC6D6B1F4BFC5B00EBD0AD /* SpiteVoteHandler.m in Sources */,
+				D76ADAF51F4D27E4007BC636 /* CashPayment.m in Sources */,
+				D76ADB031F4D79A4007BC636 /* Leaf.m in Sources */,
+				D7AC6D681F4BFC3700EBD0AD /* RepeatVoteHandler.m in Sources */,
+				D76ADAF21F4D26CB007BC636 /* PaymentContext.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D7AC6D591F4BFAE200EBD0AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D7AC6D5A1F4BFAE300EBD0AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D7AC6D5C1F4BFAE300EBD0AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7AC6D5D1F4BFAE300EBD0AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7AC6D4F1F4BFAE200EBD0AD /* Build configuration list for PBXProject "DesignPattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7AC6D591F4BFAE200EBD0AD /* Debug */,
+				D7AC6D5A1F4BFAE300EBD0AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7AC6D5B1F4BFAE300EBD0AD /* Build configuration list for PBXNativeTarget "DesignPattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7AC6D5C1F4BFAE300EBD0AD /* Debug */,
+				D7AC6D5D1F4BFAE300EBD0AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7AC6D4C1F4BFAE200EBD0AD /* Project object */;
+}
