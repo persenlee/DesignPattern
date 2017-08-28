@@ -11,6 +11,8 @@
 #import "PaymentContext.h"
 #import "CashPayment.h"
 #import "CompositPatterHeader.h"
+#import "Invoker.h"
+#import "MediatorPatternHeader.h"
 
 /**
   状态模式
@@ -24,16 +26,30 @@ void statePatternExample();
  */
 void strategyPatternExample();
 
+/**
+ 统一组合对象和叶子对象
+ */
 void compositPatternExample();
+
+/**
+ 请求封装
+ */
+void commandPatternExample();
+
+
+/**
+  用一个中介对象来封装一系列的对象交互。
+  中介者使得各对象不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互
+ */
+void mediatorPatternExample();
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        //StatePattern
 //        statePatternExample();
-        //StrateyPattern
 //        strategyPatternExample();
-        
-        compositPatternExample();
+//        compositPatternExample();
+//        commandPatternExample();
+        mediatorPatternExample();
     }
     return 0;
 }
@@ -73,4 +89,20 @@ void compositPatternExample()
     [root addElement:weijin];
     
     NSLog(@"%@",root);
+}
+
+void commandPatternExample()
+{
+    Invoker *invoker = [[Invoker alloc] init];
+    ConcreteCommand *command = [[ConcreteCommand alloc] init];
+    Receiver *receiver = [[Receiver alloc] init];
+    command.receiver = receiver;
+    invoker.command = command;
+    [invoker invoke];
+}
+
+void mediatorPatternExample()
+{
+    Controller1 *c1 = [[Controller1 alloc] init];
+    [c1 gotoController2];
 }

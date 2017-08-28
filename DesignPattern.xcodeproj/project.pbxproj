@@ -13,12 +13,20 @@
 		D76ADAFB1F4D2947007BC636 /* PaymentEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D76ADAFA1F4D2947007BC636 /* PaymentEntity.m */; };
 		D76ADB001F4D7978007BC636 /* Composit.m in Sources */ = {isa = PBXBuildFile; fileRef = D76ADAFF1F4D7978007BC636 /* Composit.m */; };
 		D76ADB031F4D79A4007BC636 /* Leaf.m in Sources */ = {isa = PBXBuildFile; fileRef = D76ADB021F4D79A4007BC636 /* Leaf.m */; };
+		D770948B1F53F7D60070D207 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D770948A1F53F7D60070D207 /* Mediator.m */; };
+		D770948E1F53F9690070D207 /* Controller1.m in Sources */ = {isa = PBXBuildFile; fileRef = D770948D1F53F9690070D207 /* Controller1.m */; };
+		D77094911F53F9780070D207 /* Controller2.m in Sources */ = {isa = PBXBuildFile; fileRef = D77094901F53F9780070D207 /* Controller2.m */; };
+		D77094941F53FC9C0070D207 /* Controller1+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = D77094931F53FC9C0070D207 /* Controller1+Router.m */; };
+		D77094971F53FD130070D207 /* Controller2+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = D77094961F53FD130070D207 /* Controller2+Router.m */; };
 		D7AC6D581F4BFAE200EBD0AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AC6D571F4BFAE200EBD0AD /* main.m */; };
 		D7AC6D611F4BFB8800EBD0AD /* VoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AC6D601F4BFB8800EBD0AD /* VoteManager.m */; };
 		D7AC6D651F4BFC2000EBD0AD /* NormalVoteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AC6D641F4BFC2000EBD0AD /* NormalVoteHandler.m */; };
 		D7AC6D681F4BFC3700EBD0AD /* RepeatVoteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AC6D671F4BFC3700EBD0AD /* RepeatVoteHandler.m */; };
 		D7AC6D6B1F4BFC5B00EBD0AD /* SpiteVoteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AC6D6A1F4BFC5B00EBD0AD /* SpiteVoteHandler.m */; };
 		D7AC6D6E1F4BFC6E00EBD0AD /* BlackVoteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AC6D6D1F4BFC6E00EBD0AD /* BlackVoteHandler.m */; };
+		D7C07AC01F4FFC8700888F10 /* ConcreteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C07ABF1F4FFC8700888F10 /* ConcreteCommand.m */; };
+		D7C07AC31F4FFCB100888F10 /* Invoker.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C07AC21F4FFCB100888F10 /* Invoker.m */; };
+		D7C07AC61F4FFCC400888F10 /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C07AC51F4FFCC400888F10 /* Receiver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +57,18 @@
 		D76ADB011F4D79A4007BC636 /* Leaf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Leaf.h; sourceTree = "<group>"; };
 		D76ADB021F4D79A4007BC636 /* Leaf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Leaf.m; sourceTree = "<group>"; };
 		D76ADB041F4D7F08007BC636 /* CompositPatterHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompositPatterHeader.h; sourceTree = "<group>"; };
+		D77094881F53F7A80070D207 /* MediatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediatorProtocol.h; sourceTree = "<group>"; };
+		D77094891F53F7D60070D207 /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		D770948A1F53F7D60070D207 /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		D770948C1F53F9690070D207 /* Controller1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller1.h; sourceTree = "<group>"; };
+		D770948D1F53F9690070D207 /* Controller1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller1.m; sourceTree = "<group>"; };
+		D770948F1F53F9780070D207 /* Controller2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller2.h; sourceTree = "<group>"; };
+		D77094901F53F9780070D207 /* Controller2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller2.m; sourceTree = "<group>"; };
+		D77094921F53FC9C0070D207 /* Controller1+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Controller1+Router.h"; sourceTree = "<group>"; };
+		D77094931F53FC9C0070D207 /* Controller1+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Controller1+Router.m"; sourceTree = "<group>"; };
+		D77094951F53FD130070D207 /* Controller2+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Controller2+Router.h"; sourceTree = "<group>"; };
+		D77094961F53FD130070D207 /* Controller2+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Controller2+Router.m"; sourceTree = "<group>"; };
+		D77094981F53FD590070D207 /* MediatorPatternHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorPatternHeader.h; sourceTree = "<group>"; };
 		D7AC6D541F4BFAE200EBD0AD /* DesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7AC6D571F4BFAE200EBD0AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D7AC6D5F1F4BFB8800EBD0AD /* VoteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteManager.h; sourceTree = "<group>"; };
@@ -62,6 +82,13 @@
 		D7AC6D6A1F4BFC5B00EBD0AD /* SpiteVoteHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiteVoteHandler.m; sourceTree = "<group>"; };
 		D7AC6D6C1F4BFC6E00EBD0AD /* BlackVoteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackVoteHandler.h; sourceTree = "<group>"; };
 		D7AC6D6D1F4BFC6E00EBD0AD /* BlackVoteHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackVoteHandler.m; sourceTree = "<group>"; };
+		D7C07ABD1F4FFC6A00888F10 /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		D7C07ABE1F4FFC8700888F10 /* ConcreteCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteCommand.h; sourceTree = "<group>"; };
+		D7C07ABF1F4FFC8700888F10 /* ConcreteCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteCommand.m; sourceTree = "<group>"; };
+		D7C07AC11F4FFCB100888F10 /* Invoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Invoker.h; sourceTree = "<group>"; };
+		D7C07AC21F4FFCB100888F10 /* Invoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Invoker.m; sourceTree = "<group>"; };
+		D7C07AC41F4FFCC400888F10 /* Receiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Receiver.h; sourceTree = "<group>"; };
+		D7C07AC51F4FFCC400888F10 /* Receiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receiver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +131,25 @@
 			path = CompositPattern;
 			sourceTree = "<group>";
 		};
+		D77094871F53F22E0070D207 /* MediatorPattern */ = {
+			isa = PBXGroup;
+			children = (
+				D77094881F53F7A80070D207 /* MediatorProtocol.h */,
+				D77094891F53F7D60070D207 /* Mediator.h */,
+				D770948A1F53F7D60070D207 /* Mediator.m */,
+				D770948C1F53F9690070D207 /* Controller1.h */,
+				D770948D1F53F9690070D207 /* Controller1.m */,
+				D77094921F53FC9C0070D207 /* Controller1+Router.h */,
+				D77094931F53FC9C0070D207 /* Controller1+Router.m */,
+				D770948F1F53F9780070D207 /* Controller2.h */,
+				D77094901F53F9780070D207 /* Controller2.m */,
+				D77094951F53FD130070D207 /* Controller2+Router.h */,
+				D77094961F53FD130070D207 /* Controller2+Router.m */,
+				D77094981F53FD590070D207 /* MediatorPatternHeader.h */,
+			);
+			path = MediatorPattern;
+			sourceTree = "<group>";
+		};
 		D7AC6D4B1F4BFAE200EBD0AD = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +169,8 @@
 		D7AC6D561F4BFAE200EBD0AD /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				D77094871F53F22E0070D207 /* MediatorPattern */,
+				D7C07ABC1F4FFC4F00888F10 /* CommandPattern */,
 				D76ADAFC1F4D72F9007BC636 /* CompositPattern */,
 				D76ADAEE1F4D1DFD007BC636 /* StrategyPattern */,
 				D7AC6D5E1F4BFB0B00EBD0AD /* StatePattern */,
@@ -147,6 +195,20 @@
 				D7AC6D6D1F4BFC6E00EBD0AD /* BlackVoteHandler.m */,
 			);
 			path = StatePattern;
+			sourceTree = "<group>";
+		};
+		D7C07ABC1F4FFC4F00888F10 /* CommandPattern */ = {
+			isa = PBXGroup;
+			children = (
+				D7C07ABD1F4FFC6A00888F10 /* Command.h */,
+				D7C07ABE1F4FFC8700888F10 /* ConcreteCommand.h */,
+				D7C07ABF1F4FFC8700888F10 /* ConcreteCommand.m */,
+				D7C07AC11F4FFCB100888F10 /* Invoker.h */,
+				D7C07AC21F4FFCB100888F10 /* Invoker.m */,
+				D7C07AC41F4FFCC400888F10 /* Receiver.h */,
+				D7C07AC51F4FFCC400888F10 /* Receiver.m */,
+			);
+			path = CommandPattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C07AC31F4FFCB100888F10 /* Invoker.m in Sources */,
 				D7AC6D581F4BFAE200EBD0AD /* main.m in Sources */,
 				D76ADAF81F4D27FD007BC636 /* BankCardPayment.m in Sources */,
 				D7AC6D651F4BFC2000EBD0AD /* NormalVoteHandler.m in Sources */,
@@ -213,8 +276,15 @@
 				D76ADB001F4D7978007BC636 /* Composit.m in Sources */,
 				D7AC6D6E1F4BFC6E00EBD0AD /* BlackVoteHandler.m in Sources */,
 				D7AC6D611F4BFB8800EBD0AD /* VoteManager.m in Sources */,
+				D7C07AC61F4FFCC400888F10 /* Receiver.m in Sources */,
 				D7AC6D6B1F4BFC5B00EBD0AD /* SpiteVoteHandler.m in Sources */,
+				D770948B1F53F7D60070D207 /* Mediator.m in Sources */,
+				D7C07AC01F4FFC8700888F10 /* ConcreteCommand.m in Sources */,
 				D76ADAF51F4D27E4007BC636 /* CashPayment.m in Sources */,
+				D77094971F53FD130070D207 /* Controller2+Router.m in Sources */,
+				D770948E1F53F9690070D207 /* Controller1.m in Sources */,
+				D77094941F53FC9C0070D207 /* Controller1+Router.m in Sources */,
+				D77094911F53F9780070D207 /* Controller2.m in Sources */,
 				D76ADB031F4D79A4007BC636 /* Leaf.m in Sources */,
 				D7AC6D681F4BFC3700EBD0AD /* RepeatVoteHandler.m in Sources */,
 				D76ADAF21F4D26CB007BC636 /* PaymentContext.m in Sources */,
