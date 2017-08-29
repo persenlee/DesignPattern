@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D72A995B1F55097400BEE55F /* TargetObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D72A995A1F55097300BEE55F /* TargetObject.m */; };
+		D72A995E1F55098300BEE55F /* ProxyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D72A995D1F55098300BEE55F /* ProxyObject.m */; };
+		D72A99641F5559A900BEE55F /* MyFeedSnapshootBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D72A99631F5559A900BEE55F /* MyFeedSnapshootBuilder.m */; };
+		D72A99671F5559F500BEE55F /* FeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D72A99661F5559F500BEE55F /* FeedModel.m */; };
 		D76ADAF21F4D26CB007BC636 /* PaymentContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D76ADAF11F4D26CB007BC636 /* PaymentContext.m */; };
 		D76ADAF51F4D27E4007BC636 /* CashPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = D76ADAF41F4D27E4007BC636 /* CashPayment.m */; };
 		D76ADAF81F4D27FD007BC636 /* BankCardPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = D76ADAF71F4D27FD007BC636 /* BankCardPayment.m */; };
@@ -42,6 +46,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D72A99591F55097300BEE55F /* TargetObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetObject.h; sourceTree = "<group>"; };
+		D72A995A1F55097300BEE55F /* TargetObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TargetObject.m; sourceTree = "<group>"; };
+		D72A995C1F55098300BEE55F /* ProxyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyObject.h; sourceTree = "<group>"; };
+		D72A995D1F55098300BEE55F /* ProxyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyObject.m; sourceTree = "<group>"; };
+		D72A99611F55591200BEE55F /* FeedSnapshootBuilderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedSnapshootBuilderProtocol.h; sourceTree = "<group>"; };
+		D72A99621F5559A900BEE55F /* MyFeedSnapshootBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFeedSnapshootBuilder.h; sourceTree = "<group>"; };
+		D72A99631F5559A900BEE55F /* MyFeedSnapshootBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFeedSnapshootBuilder.m; sourceTree = "<group>"; };
+		D72A99651F5559F500BEE55F /* FeedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedModel.h; sourceTree = "<group>"; };
+		D72A99661F5559F500BEE55F /* FeedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedModel.m; sourceTree = "<group>"; };
 		D76ADAEF1F4D26B2007BC636 /* PaymentProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentProtocol.h; sourceTree = "<group>"; };
 		D76ADAF01F4D26CB007BC636 /* PaymentContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentContext.h; sourceTree = "<group>"; };
 		D76ADAF11F4D26CB007BC636 /* PaymentContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentContext.m; sourceTree = "<group>"; };
@@ -102,6 +115,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D72A995F1F550DE600BEE55F /* PrototypePattern */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PrototypePattern;
+			sourceTree = "<group>";
+		};
+		D72A99601F5558A900BEE55F /* BuilderPattern */ = {
+			isa = PBXGroup;
+			children = (
+				D72A99611F55591200BEE55F /* FeedSnapshootBuilderProtocol.h */,
+				D72A99621F5559A900BEE55F /* MyFeedSnapshootBuilder.h */,
+				D72A99631F5559A900BEE55F /* MyFeedSnapshootBuilder.m */,
+				D72A99651F5559F500BEE55F /* FeedModel.h */,
+				D72A99661F5559F500BEE55F /* FeedModel.m */,
+			);
+			path = BuilderPattern;
+			sourceTree = "<group>";
+		};
 		D76ADAEE1F4D1DFD007BC636 /* StrategyPattern */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +182,17 @@
 			path = MediatorPattern;
 			sourceTree = "<group>";
 		};
+		D77094991F5412130070D207 /* ProxyPattern */ = {
+			isa = PBXGroup;
+			children = (
+				D72A99591F55097300BEE55F /* TargetObject.h */,
+				D72A995A1F55097300BEE55F /* TargetObject.m */,
+				D72A995C1F55098300BEE55F /* ProxyObject.h */,
+				D72A995D1F55098300BEE55F /* ProxyObject.m */,
+			);
+			path = ProxyPattern;
+			sourceTree = "<group>";
+		};
 		D7AC6D4B1F4BFAE200EBD0AD = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +212,9 @@
 		D7AC6D561F4BFAE200EBD0AD /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				D72A99601F5558A900BEE55F /* BuilderPattern */,
+				D72A995F1F550DE600BEE55F /* PrototypePattern */,
+				D77094991F5412130070D207 /* ProxyPattern */,
 				D77094871F53F22E0070D207 /* MediatorPattern */,
 				D7C07ABC1F4FFC4F00888F10 /* CommandPattern */,
 				D76ADAFC1F4D72F9007BC636 /* CompositPattern */,
@@ -271,6 +317,7 @@
 				D7C07AC31F4FFCB100888F10 /* Invoker.m in Sources */,
 				D7AC6D581F4BFAE200EBD0AD /* main.m in Sources */,
 				D76ADAF81F4D27FD007BC636 /* BankCardPayment.m in Sources */,
+				D72A99671F5559F500BEE55F /* FeedModel.m in Sources */,
 				D7AC6D651F4BFC2000EBD0AD /* NormalVoteHandler.m in Sources */,
 				D76ADAFB1F4D2947007BC636 /* PaymentEntity.m in Sources */,
 				D76ADB001F4D7978007BC636 /* Composit.m in Sources */,
@@ -279,10 +326,13 @@
 				D7C07AC61F4FFCC400888F10 /* Receiver.m in Sources */,
 				D7AC6D6B1F4BFC5B00EBD0AD /* SpiteVoteHandler.m in Sources */,
 				D770948B1F53F7D60070D207 /* Mediator.m in Sources */,
+				D72A995B1F55097400BEE55F /* TargetObject.m in Sources */,
 				D7C07AC01F4FFC8700888F10 /* ConcreteCommand.m in Sources */,
+				D72A995E1F55098300BEE55F /* ProxyObject.m in Sources */,
 				D76ADAF51F4D27E4007BC636 /* CashPayment.m in Sources */,
 				D77094971F53FD130070D207 /* Controller2+Router.m in Sources */,
 				D770948E1F53F9690070D207 /* Controller1.m in Sources */,
+				D72A99641F5559A900BEE55F /* MyFeedSnapshootBuilder.m in Sources */,
 				D77094941F53FC9C0070D207 /* Controller1+Router.m in Sources */,
 				D77094911F53F9780070D207 /* Controller2.m in Sources */,
 				D76ADB031F4D79A4007BC636 /* Leaf.m in Sources */,

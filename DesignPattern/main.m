@@ -13,6 +13,8 @@
 #import "CompositPatterHeader.h"
 #import "Invoker.h"
 #import "MediatorPatternHeader.h"
+#import "ProxyObject.h"
+#import "MyFeedSnapshootBuilder.h"
 
 /**
   状态模式
@@ -43,13 +45,28 @@ void commandPatternExample();
  */
 void mediatorPatternExample();
 
+/**
+ 控制对象的访问
+ */
+void proxyPatternExample();
+
+void prototypePatternExample();
+
+/**
+ “分离构建算法和具体的构造实现”
+ */
+void builderPatternExample();
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 //        statePatternExample();
 //        strategyPatternExample();
 //        compositPatternExample();
 //        commandPatternExample();
-        mediatorPatternExample();
+//        mediatorPatternExample();
+//        proxyPatternExample();
+//        prototypePatternExample();
+        builderPatternExample();
     }
     return 0;
 }
@@ -105,4 +122,24 @@ void mediatorPatternExample()
 {
     Controller1 *c1 = [[Controller1 alloc] init];
     [c1 gotoController2];
+}
+
+void proxyPatternExample()
+{
+    ProxyObject *obj = [[ProxyObject alloc] init];
+    [obj doSomething];
+}
+
+void prototypePatternExample()
+{
+    
+}
+
+void builderPatternExample()
+{
+    MyFeedSnapshootBuilder *builder = [[MyFeedSnapshootBuilder alloc] init];
+    [builder buildHeader];
+    [builder buildBody];
+    [builder buildFooter];
+    NSLog(@"%@",builder.resultModel);
 }
